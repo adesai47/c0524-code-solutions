@@ -42,7 +42,7 @@ The '=' operator in Javascript is used to initialize a variable that is being de
 
 - How do you update the value of a variable?
 
-Through the use of console.log
+Through the use of the '='
 
 - What is the difference between `null` and `undefined`?
 
