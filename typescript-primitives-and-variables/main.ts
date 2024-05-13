@@ -14,5 +14,5 @@ console.log('empty:', empty);
 console.log('typeof empty:', typeof null);
 
 const nothing: undefined = undefined;
-console.log('nothing:', nothing);
+console.log('nothing: ', nothing);
 console.log('typeof nothing:', typeof undefined);
