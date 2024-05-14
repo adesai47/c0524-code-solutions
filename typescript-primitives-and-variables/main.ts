@@ -5,9 +5,9 @@ console.log('value of isCool:', isCool);
 const totalPets: number = 0;
 console.log('value of totalPets:', totalPets);
 
-console.log('typeof fullName:', typeof 'fullName');
-console.log('typeof isCool:', typeof true);
-console.log('typeof totalPets:', typeof 0);
+console.log('typeof fullName:', typeof fullName);
+console.log('typeof isCool:', typeof isCool);
+console.log('typeof totalPets:', typeof totalPets);
 
 const empty: null = null;
 console.log('empty:', empty);
