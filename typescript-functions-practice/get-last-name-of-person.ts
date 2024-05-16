@@ -4,6 +4,13 @@ interface Person {
   lastName: string;
 }
 
-function getLastNameOfPerson (person: string): string {
-  return()
+function getLastNameOfPerson(person: Person): string {
+  return person.lastName;
 }
+
+const Aaditya: any = {
+  firstName: 'Aaditya',
+  lastName: 'Desai',
+};
+
+console.log(getLastNameOfPerson(Aaditya));
