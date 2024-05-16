@@ -68,7 +68,7 @@ const tyler: Person = {
 console.log(isOldEnoughToDrink(tyler));
 
 function isOldEnoughToDrinkAndDrive(person: Person): boolean {
-  if (person.age !== 0) {
+  if (person.age >= 0 && person.age >= 21) {
     return false;
   } else {
     return true;
