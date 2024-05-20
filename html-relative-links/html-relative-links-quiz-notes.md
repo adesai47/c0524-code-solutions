@@ -6,11 +6,19 @@ Answer the following questions in the provided markdown file before turning in t
 
 - How do you indicate the relative link to a parent directory?
 
+../ with the file name after
+
 - How do you indicate the relative link to a child directory?
+
+./
 
 - How do you indicate the relative link to a grand parent directory?
 
+../../
+
 - How do you indicate the relative link to the same directory?
+
+using the file name that it is directed to
 
 ## Notes
 
