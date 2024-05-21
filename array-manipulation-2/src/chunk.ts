@@ -5,8 +5,16 @@ function chunk(array: unknown[], size: number): unknown[] {
   }
 
   const answer: unknown[] = [];
-  for (let i = 0; i < array.length; i += size) {
-    answer.push(array.slice(i, i + size));
+  let chunk: unknown[] = [];
+
+  for (let i = 0; i < array.length; i++) {
+    chunk.push(array[i]);
+
+    if (chunk.length === size || i === array.length - 1) {
+      answer.push(chunk);
+      chunk = [];
+    }
   }
+
   return answer;
 }
