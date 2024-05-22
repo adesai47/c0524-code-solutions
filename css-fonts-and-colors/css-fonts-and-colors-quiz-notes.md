@@ -14,7 +14,7 @@ font-weight
 
 - Name three different types of values you can use to specify colors in CSS.
 
-HEX, RGB, RGBA
+HEX, RGB, RGBA.
 
 ## Notes
 
