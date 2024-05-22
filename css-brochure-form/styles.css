@@ -1,0 +1,66 @@
+body {
+  font-family: 'Brandon Grotesque', sans-serif;
+  background-color: white;
+  align-items: center;
+  height: 100em;
+  margin: 0;
+  text-indent: 10px;
+}
+
+.everything {
+  background-color: white;
+  padding: 2em;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ff6f61;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.group {
+  margin-bottom: 1em;
+}
+
+label {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  color: rgb(60, 56, 56);
+}
+
+input,
+select {
+  font-size: 16px;
+  padding: 0.5em;
+  width: 100%;
+  border: 1px solid lightgray;
+  color: black;
+  padding-left: 5px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: lightgray;
+}
+
+button {
+  font-size: 16px;
+  padding: 0.75em 1.5em;
+  color: white;
+  background-color: rgb(244, 124, 108);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  float: right;
+}
+
+button:hover {
+  background-color: rgb(206, 99, 99);
+}
