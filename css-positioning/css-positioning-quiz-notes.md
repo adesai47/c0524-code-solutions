@@ -26,7 +26,7 @@ it allows elemnts to be placed om the page but not the position of the other ele
 
 - How do you constrain an absolutely positioned element to a containing block?
 
-using the edge of a padding block of a near element that has a position other than static
+using the edge of a containing block of a near element that has a position other than static
 
 - What are the four box offset properties?
 
