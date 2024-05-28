@@ -2,7 +2,7 @@ const $button = document.querySelector('.click-button');
 
 if (!$button) throw new Error("$button doesn't exist");
 
-function handleClick(event: any): void {
+function handleClick(event: Event): void {
   console.log('button clicked');
   console.log('event', event);
   console.log('event.target', event.target);
@@ -15,7 +15,7 @@ if (!$hoverButton) {
   throw new Error("Button with class 'hover-button' not found");
 }
 
-function handleMouseover(event: any): void {
+function handleMouseover(event: Event): void {
   console.log('button hovered');
   console.log(event);
   console.log(event.target);
@@ -28,7 +28,7 @@ if (!$doubleClickButton) {
   throw new Error("doubleClickButton doesn't exist");
 }
 
-function handleDoubleClick(event: any): void {
+function handleDoubleClick(event: Event): void {
   console.log('button double clicked');
   console.log(event);
   console.log(event.target);
