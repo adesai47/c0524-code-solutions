@@ -1,0 +1,41 @@
+/* styles.css */
+body {
+  font-family: 'Poetsen One', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: white;
+}
+
+#typing-tutor {
+  text-align: center;
+}
+
+#phrase span {
+  font-size: 50px;
+  padding: 0 1px;
+  border-bottom: 2px solid transparent;
+  letter-spacing: -1px;
+}
+
+#phrase span.space {
+  padding: 0 10px;
+  margin: 0 5px;
+  letter-spacing: normal;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+  border-bottom-color: red;
+}
+
+.current {
+  text-decoration: underline;
+  border-bottom-color: green;
+}
