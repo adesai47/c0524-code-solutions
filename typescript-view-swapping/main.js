@@ -2,22 +2,19 @@
 const tabContainer = document.querySelector('.tab-container');
 const tabs = document.querySelectorAll('.tab');
 const views = document.querySelectorAll('.view');
-if (!tabContainer) throw new Error('tabContainer query did not work');
-if (!tabs) throw new Error('tabs query did not work');
-if (!views) throw new Error('views query did not work');
+if (!tabContainer) throw new Error('.tab-container');
+if (!tabs) throw new Error('.tab');
+if (!views) throw new Error('.view');
 tabContainer.addEventListener('click', (event) => {
-  const $eventTarget = event.target;
-  if ($eventTarget.matches('.tab')) {
+  const eventTarget = event.target;
+  if (eventTarget.matches('.tab')) {
     tabs.forEach((tab) => {
-      if (tab === $eventTarget) {
-        tab.classList.add('active');
-      } else {
-        tab.classList.remove('active');
-      }
+      tab.classList.remove('active');
     });
-    const viewName = $eventTarget.dataset.view;
+    eventTarget.classList.add('active');
+    const viewName = eventTarget.getAttribute('data-view');
     views.forEach((view) => {
-      if (view.dataset.view === viewName) {
+      if (view.getAttribute('data-view') === viewName) {
         view.classList.remove('hidden');
       } else {
         view.classList.add('hidden');
