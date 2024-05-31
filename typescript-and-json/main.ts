@@ -21,7 +21,7 @@ console.log('type of books:', typeof books);
 
 const JSONbooks = JSON.stringify(books);
 
-console.log('JSON string of books:, JSONbooks');
+console.log('JSON string of books:', JSONbooks);
 console.log('type of JSONbooks:', typeof JSONbooks);
 
 const JSONstudent = '{"id": "455441", "name": "Aaditya Desai"}';
