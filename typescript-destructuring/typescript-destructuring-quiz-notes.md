@@ -10,11 +10,11 @@ breaking down code to make it more readable and concise
 
 - What is the syntax for `Object` destructuring?
 
-const
+const{property names} = variable thaat is assigned to all of the objects
 
 - What is the syntax for `Array` destructuring?
 
-const
+const [names for indexes] = array we are destructuring from
 
 - How can you tell the difference between destructuring and creating `Object`/`Array` literals?
 
