@@ -1,7 +1,6 @@
 const heading = document.querySelector('.message');
+if (!heading) throw new Error('issue querying for title');
 
-if (heading) {
-  setTimeout(() => {
-    heading.textContent = 'Hello There';
-  }, 2000);
-}
+setTimeout(() => {
+  heading.textContent = 'Hello There';
+}, 2000);
