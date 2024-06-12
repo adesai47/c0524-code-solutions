@@ -26,6 +26,8 @@ Dependencies get installed in your project whenever you install the package mana
 
 - What happens when you add a dependency to a package with `npm`?
 
+node modules folder appears and it gets added to the package.json
+
 - What is a devDependency and how do you add one to a package?
 
 meant to support the development process of your web application. When installed through the node dependency manager, npm, the devDependencies will get stored in the package
