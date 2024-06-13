@@ -8,7 +8,10 @@ const prevButton = document.querySelector(
 const nextButton = document.querySelector(
   '.carousel-next'
 ) as HTMLButtonElement;
-const indicators = document.querySelectorAll('.carousel-indicator');
+const indicatorsContainer = document.querySelector(
+  '.carousel-indicators'
+) as HTMLDivElement;
+const indicators = indicatorsContainer.querySelectorAll('.carousel-indicator');
 
 let currentIndex = 0;
 const totalImages = images.length;
@@ -47,11 +50,15 @@ prevButton.addEventListener('click', (): void => {
   resetInterval();
 });
 
-indicators.forEach((indicator, index) => {
-  indicator.addEventListener('click', (): void => {
-    goToImage(index);
-    resetInterval();
-  });
+indicatorsContainer.addEventListener('click', (event: Event): void => {
+  const target = event.target as HTMLElement;
+  if (target.classList.contains('carousel-indicator')) {
+    const index = Array.from(indicators).indexOf(target);
+    if (index !== -1) {
+      goToImage(index);
+      resetInterval();
+    }
+  }
 });
 
 const startInterval = (): void => {
