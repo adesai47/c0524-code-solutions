@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #181818;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.light-bulb {
+  width: 150px;
+  height: 150px;
+  background-color: #333;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.light-bulb.on {
+  background-color: #ffeb3b;
+  box-shadow: 0 0 50px rgba(255, 235, 59, 0.6),
+    0 0 100px rgba(255, 235, 59, 0.2);
+}
