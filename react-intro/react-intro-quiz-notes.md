@@ -14,11 +14,11 @@ a self-contained collection of HTML, CSS and JavaScript that provide all of the 
 
 - How do you mount a React app (root component) to the DOM?
 
-import export
+createRoot
 
 - What are some other popular frontend frameworks?
 
-Vite
+Vue, Svelte
 
 ## Notes
 
