@@ -17,7 +17,7 @@ export function Carousel({ images }: CarouselProps) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const nextImage = useCallback(() => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % images);
+    setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
   }, [images]);
 
   const prevImage = useCallback(() => {
