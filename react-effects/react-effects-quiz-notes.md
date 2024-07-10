@@ -6,7 +6,7 @@ Answer the following questions in the provided markdown file before turning in t
 
 - When is a component "mounted" to the DOM?
 
-when the component is created and then added to the DOM
+when the component is called
 
 - What is a React Effect?
 
