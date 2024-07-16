@@ -1,3 +1,3 @@
-SELECT *
-FROM actor
-WHERE actor_id = 40;
+select *
+from "actors"
+where "actorId" = 40;

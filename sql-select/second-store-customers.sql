@@ -1,3 +1,3 @@
-SELECT email
-FROM customer
-WHERE store_id = 2;
+select "email"
+from "customer"
+where "storeId" = 2;

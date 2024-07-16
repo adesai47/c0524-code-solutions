@@ -1,4 +1,6 @@
-SELECT title, description, release_year
-FROM film
-WHERE release_year = 2006
+SELECT "title",
+      "description",
+      "release_year"
+FROM "films"
+WHERE "releaseYear" = 2006
 LIMIT 20;

@@ -14,6 +14,8 @@ specify the columns you want to retrieve in the SELECT clause, separated by comm
 
 - How do you filter rows based on some specific criteria?
 
+where clause
+
 - What are the benefits of formatting your SQL?
 
 Increased readability

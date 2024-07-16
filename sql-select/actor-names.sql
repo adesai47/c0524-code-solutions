@@ -1,2 +1,5 @@
-SELECT actor_id, first_name, last_name
-FROM actor;
+select
+"actorId",
+"firstName",
+"lastName"
+from "actors";

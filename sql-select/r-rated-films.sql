@@ -1,3 +1,6 @@
-SELECT film_id, title, description, length
-FROM film
-WHERE rating = 'R';
+SELECT "filmId",
+       "title",
+       "description",
+       "length"
+from "films"
+where rating = 'R';

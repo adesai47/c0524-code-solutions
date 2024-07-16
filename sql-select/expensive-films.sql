@@ -1,4 +1,4 @@
-SELECT *
-FROM film
-ORDER BY replacement_cost DESC
-LIMIT 10;
+select *
+from "films"
+order by replacement_cost desc
+limit 10;
