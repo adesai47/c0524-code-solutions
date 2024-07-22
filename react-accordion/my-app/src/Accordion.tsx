@@ -1,18 +1,17 @@
 import { useState } from 'react';
-import { TopicCard } from './TopicCard';
-import './Accordion.css';
+import TopicCard from './TopicCard';
 
-type Topic = {
+interface Topic {
   id: number;
   title: string;
   content: string;
-};
+}
 
-type AccordionProps = {
+interface AccordionProps {
   topics: Topic[];
-};
+}
 
-export function Accordion({ topics }: AccordionProps) {
+function Accordion({ topics }: AccordionProps) {
   const [openTopicId, setOpenTopicId] = useState<number | null>(null);
 
   const handleToggle = (id: number) => {
@@ -20,15 +19,17 @@ export function Accordion({ topics }: AccordionProps) {
   };
 
   return (
-    <div className="accordion">
+    <div>
       {topics.map((topic) => (
         <TopicCard
           key={topic.id}
           topic={topic}
-          isOpen={openTopicId === topic.id}
+          isOpen={topic.id === openTopicId}
           onToggle={() => handleToggle(topic.id)}
         />
       ))}
     </div>
   );
 }
+
+export default Accordion;

@@ -1,24 +1,24 @@
-import './TopicCard.css';
-
-type Topic = {
+interface Topic {
   id: number;
   title: string;
   content: string;
-};
+}
 
-type TopicCardProps = {
+interface TopicCardProps {
   topic: Topic;
   isOpen: boolean;
   onToggle: () => void;
-};
+}
 
-export function TopicCard({ topic, isOpen, onToggle }: TopicCardProps) {
+function TopicCard({ topic, isOpen, onToggle }: TopicCardProps) {
   return (
-    <div className="topic-card">
-      <div className="topic-title" onClick={onToggle}>
+    <div>
+      <h3 onClick={onToggle} style={{ cursor: 'pointer' }}>
         {topic.title}
-      </div>
-      {isOpen && <div className="topic-content">{topic.content}</div>}
+      </h3>
+      {isOpen && <p>{topic.content}</p>}
     </div>
   );
 }
+
+export default TopicCard;
