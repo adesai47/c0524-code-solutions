@@ -1,0 +1,189 @@
+body {
+  font-family: Avenir, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.logo {
+  font-size: 1.5em;
+  color: #333;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+}
+
+ul li {
+  margin: 0 15px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.contact-btn {
+  background-color: #002855;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.hero {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text {
+  flex-basis: 60%;
+}
+
+.hero-text h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hero-text p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #002855;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.clinicians {
+  background-color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.clinicians h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.clinicians p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.clinicians-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clinicians-list .column {
+  margin: 0 20px;
+}
+
+.clinicians-list .column p {
+  margin-bottom: 10px;
+}
+
+.cta {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.cta h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.cta.container p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo h1 {
+  font-size: 1.5em;
+}
+
+.footer-links h4 {
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+}
+
+.footer-bottom ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.footer-bottom ul li {
+  margin: 0 15px;
+}
+
+.footer-bottom ul li a {
+  color: #fff;
+  text-decoration: none;
+}
